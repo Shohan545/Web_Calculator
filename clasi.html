@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="clasi.css">
+    <script defer src="/Calculator/calsi.js"></script>
+</head>
+<body>
+    <h1>Calculator</h1> 
+    <p>Click on the buttons to perform calculations.</p>
+    <p>Use the "C" button to clear the display and "DEL" to delete the last character.</p>
+    <p>Click on the "=" button to calculate the result.</p>     
+    <div class="calculator">
+        <input id="display" readonly>
+        <div class="key">
+            <button onclick="number('+')" class="operator">+</button>
+            <button  onclick="number('1')">1</button>
+            <button  onclick="number('2')">2</button>
+            <button onclick="number('3')">3</button>   
+            <button  onclick="number('-')" class="operator">-</button>
+            <button  onclick="number('4')">4</button>
+            <button onclick="number('5')">5</button>
+            <button  onclick="number('6')">6</button>
+            <button  onclick="number('*')" class="operator">*</button> 
+            <button  onclick="number('7')">7</button>
+            <button  onclick="number('8')">8</button>
+            <button  onclick="number('9')">9</button>
+            <button  onclick="number('/')" class="operator">/</button>
+            <button  onclick="number('0')">0</button>
+            <button  onclick="calculate()">=</button>    
+            <button  onclick="clearDisplay()">C</button>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
